@@ -1,0 +1,25 @@
+@mixin TextOverflow($lines) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $lines;
+}
+
+@mixin Scroll(
+  $height,
+  $width,
+  $colorTrack: var(--scroll-track-color),
+  $colorThumb: var(--scroll-thumb-color)
+) {
+  &::-webkit-scrollbar {
+    height: $height;
+    width: $width;
+  }
+  &::-webkit-scrollbar-track {
+    background: $colorTrack;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $colorThumb;
+    border-radius: 20px;
+  }
+}
