@@ -8,5 +8,29 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AppAlert: typeof import('./src/components/UI/AppAlert.vue')['default']
+    AppButton: typeof import('./src/components/UI/AppButton.vue')['default']
+    AppError: typeof import('./src/components/UI/AppError.vue')['default']
+    AppFooter: typeof import('./src/components/core/AppFooter.vue')['default']
+    AppFormItem: typeof import('./src/components/UI/AppFormItem.vue')['default']
+    AppHeader: typeof import('./src/components/core/AppHeader.vue')['default']
+    AppInput: typeof import('./src/components/UI/AppInput.vue')['default']
+    AppSkeleton: typeof import('./src/components/UI/AppSkeleton.vue')['default']
+    BooksForm: typeof import('./src/components/books/BooksForm.vue')['default']
+    BooksTable: typeof import('./src/components/books/BooksTable.vue')['default']
+    'IFluent:dismiss24Regular': typeof import('~icons/fluent/dismiss24-regular')['default']
+    'IHugeicons:bookOpen02': typeof import('~icons/hugeicons/book-open02')['default']
+    'IIc:roundDelete': typeof import('~icons/ic/round-delete')['default']
+    'IIc:roundEdit': typeof import('~icons/ic/round-edit')['default']
+    'IIc:roundPersonPin': typeof import('~icons/ic/round-person-pin')['default']
+    'IIon:alertCircleOutline': typeof import('~icons/ion/alert-circle-outline')['default']
+    'IIon:createOutline': typeof import('~icons/ion/create-outline')['default']
+    'IIon:libraryOutline': typeof import('~icons/ion/library-outline')['default']
+    'IIon:trashOutline': typeof import('~icons/ion/trash-outline')['default']
+    'IIon:warningOutline': typeof import('~icons/ion/warning-outline')['default']
+    'ISvgSpinners:180Ring': typeof import('~icons/svg-spinners/180-ring')['default']
+    'ITabler:faceIdError': typeof import('~icons/tabler/face-id-error')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }

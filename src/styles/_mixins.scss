@@ -2,6 +2,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: $lines;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 @mixin Scroll(
